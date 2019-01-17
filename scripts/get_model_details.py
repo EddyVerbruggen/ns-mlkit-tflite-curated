@@ -2,8 +2,9 @@ import tensorflow as tf
 
 # interpreter = tf.contrib.lite.Interpreter(model_path="tf_files/optimized_graph.lite")
 # interpreter = tf.contrib.lite.Interpreter(model_path="tf_files/mobilenet_float_v2_1.0_299.tflite")
-interpreter = tf.contrib.lite.Interpreter(model_path="tf_files/mobilenet_quant_v2_1.0_299.tflite")
+# interpreter = tf.contrib.lite.Interpreter(model_path="tf_files/mobilenet_quant_v2_1.0_299.tflite")
 # interpreter = tf.contrib.lite.Interpreter(model_path="tf_files/inception_v3_quant.tflite")
+interpreter = tf.contrib.lite.Interpreter(model_path="tf_files/nutella_model/optimized_graph.lite")
 interpreter.allocate_tensors()
 
 # Print input shape and type
